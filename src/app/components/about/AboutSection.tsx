@@ -22,12 +22,12 @@ const AboutSection = () => {
         <div className="mt-4 md-mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg ">
-            I'm a Frontend developer, just starting my journey in the world of
-            web development. My curiosity and desire to learn led me to join
+            I{"'m"} a Frontend developer, just starting my journey in the world
+            of web development. My curiosity and desire to learn led me to join
             working groups, where I had the opportunity to learn from
             experienced colleagues and apply new knowledge into practice. Even
-            though I'm just starting out, I'm committed to bringing value and
-            positive contributions to every project.
+            though I{"'m"} just starting out, I{"'m"} committed to bringing
+            value and positive contributions to every project.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
