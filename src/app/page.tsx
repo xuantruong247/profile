@@ -1,5 +1,10 @@
 import Image from "next/image";
-import { AboutSection, HeroSection, Navbar } from "./components";
+import {
+  AboutSection,
+  HeroSection,
+  Navbar,
+  ProjectSection,
+} from "./components";
 
 export default function Home() {
   return (
@@ -8,6 +13,7 @@ export default function Home() {
       <div className="container mt-24 mx-auto px-12 py-4">
         <HeroSection />
         <AboutSection />
+        <ProjectSection />
       </div>
     </main>
   );

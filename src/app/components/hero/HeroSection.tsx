@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
+import imageMe from "../../../../public/image.jpg";
 
 const HeroSection = () => {
   return (
@@ -20,14 +21,13 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg lg:text-xl mb-6">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta,
-            provident quas repellat possimus blanditiis natus debitis voluptatum
-            beatae facilis eveniet aperiam dolorem obcaecati veritatis porro,
-            ducimus nemo tempore illo quos!
+            I am a Frontend Developer and I am passionate about creating and
+            developing user interfaces to create the best web experience for
+            users.
           </p>
           <div>
             <button className="px-6 py-3 rounded-full w-full sm:w-fit mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white">
-              Hire Me
+              Github
             </button>
             <button className="px-1 py-1 rounded-full w-full sm:w-fit mr-4 bg-gradient-to-br from-blue-500 to-pink-500 text-white mt-3">
               <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
@@ -38,7 +38,7 @@ const HeroSection = () => {
         </div>
         <div className="col-span-5 place-self-center mt-4 lg:mt-10">
           <Image
-            src={require("../../../public/image.jpg")}
+            src={imageMe}
             alt="hero image"
             width={400}
             height={400}

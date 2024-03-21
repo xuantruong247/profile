@@ -1,6 +1,9 @@
-export { default as HeroSection } from "./HeroSection";
-export { default as Navbar } from "./Navbar";
-export { default as NavLink } from "./NavLink";
-export { default as MenuOverlay } from "./MenuOverlay";
-export { default as AboutSection } from "./AboutSection";
-export { default as TabButton } from "./TabButton";
+export { default as HeroSection } from "./hero/HeroSection";
+export { default as Navbar } from "./navbar/Navbar";
+export { default as NavLink } from "./navbar/NavLink";
+export { default as MenuOverlay } from "./navbar/MenuOverlay";
+export { default as AboutSection } from "./about/AboutSection";
+export { default as TabButton } from "./about/TabButton";
+export { default as ProjectSection } from "./project/ProjectSection";
+export { default as ProjectCard } from "./project/ProjectCard";
+export { default as ProjectTag } from "./project/ProjectTag";
