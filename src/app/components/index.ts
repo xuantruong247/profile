@@ -7,3 +7,5 @@ export { default as TabButton } from "./about/TabButton";
 export { default as ProjectSection } from "./project/ProjectSection";
 export { default as ProjectCard } from "./project/ProjectCard";
 export { default as ProjectTag } from "./project/ProjectTag";
+export { default as EmailSection } from "./contact/EmailSection";
+export { default as Footer } from "./footer/Footer";

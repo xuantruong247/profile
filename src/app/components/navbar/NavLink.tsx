@@ -1,13 +1,19 @@
-import Link from "next/link";
+"use client";
 import React from "react";
 import { NavLinkProps } from "./type";
+import { Link as ScrollLink } from "react-scroll";
 
 const NavLink: React.FC<NavLinkProps> = ({ href, title }) => {
   return (
-    <Link
-      href={href}
-      className="block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-2xl rounded md:p-0 hover:text-white"
-    >{title}</Link>
+    <ScrollLink
+      to={href.substring(1)} 
+      spy={true}
+      smooth={true}
+      duration={500} 
+      className="block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-2xl rounded md:p-0 hover:text-white cursor-pointer"
+    >
+      {title}
+    </ScrollLink>
   );
 };
 

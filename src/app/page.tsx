@@ -1,6 +1,8 @@
 import Image from "next/image";
 import {
   AboutSection,
+  EmailSection,
+  Footer,
   HeroSection,
   Navbar,
   ProjectSection,
@@ -14,7 +16,9 @@ export default function Home() {
         <HeroSection />
         <AboutSection />
         <ProjectSection />
+        <EmailSection />
       </div>
+      <Footer />
     </main>
   );
 }

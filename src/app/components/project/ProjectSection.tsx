@@ -1,8 +1,9 @@
 "use client";
 import { projectsData } from "@/utils/constant";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { ProjectCard } from "..";
 import ProjectTag from "./ProjectTag";
+import Aos from "aos";
 
 const ProjectSection = () => {
   const [tag, setTag] = useState<string>("ALL");
@@ -14,13 +15,22 @@ const ProjectSection = () => {
   const filteredProjects = projectsData?.filter((project) => {
     return project.tag.includes(tag);
   });
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
 
   return (
-    <>
-      <h2 className="text-4xl text-center font-bold text-white mt-4">
+    <section id="projects&experiences">
+      <h2
+        className="text-4xl text-center font-bold text-white mt-4"
+        data-aos="fade-down"
+      >
         My Projects
       </h2>
-      <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
+      <div
+        data-aos="fade-right"
+        className="text-white md:flex md:flex-row justify-center items-center gap-2 py-6"
+      >
         <ProjectTag
           onClick={handleTagChange}
           isSelected={tag === "ALL"}
@@ -37,7 +47,7 @@ const ProjectSection = () => {
           name="Experiences"
         />
       </div>
-      <div className="grid md:grid-cols-3 gap-8 md:gap-12">
+      <div className="grid md:grid-cols-3 gap-8 md:gap-12" data-aos="zoom-out">
         {filteredProjects.map((product) => (
           <ProjectCard
             key={product.id}
@@ -52,7 +62,7 @@ const ProjectSection = () => {
           />
         ))}
       </div>
-    </>
+    </section>
   );
 };
 

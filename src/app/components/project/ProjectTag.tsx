@@ -8,7 +8,7 @@ const ProjectTag: React.FC<projectTags> = ({ name, onClick, isSelected }) => {
   return (
     <div>
       <button
-        className={`${buttonStype} rounded-full border-2 px-6 py-3 text-xl cursor-pointer `}
+        className={`${buttonStype} rounded-full border-2 px-6 py-3 text-xl cursor-pointer w-full md:w-fit my-2 `}
         onClick={() => onClick(name)}
       >
         {name}

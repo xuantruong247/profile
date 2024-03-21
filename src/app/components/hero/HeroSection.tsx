@@ -2,12 +2,21 @@
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import imageMe from "../../../../public/image.jpg";
+import Aos from "aos";
+import { useEffect } from "react";
 
 const HeroSection = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
+
   return (
     <section>
       <div className="grid grid-cols-1 lg:grid-cols-12">
-        <div className="col-span-7 place-self-center text-center sm:text-left">
+        <div
+          data-aos="fade-down"
+          className="col-span-7 place-self-center text-center sm:text-left"
+        >
           <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
               Hello, I{"'m"}
@@ -36,7 +45,10 @@ const HeroSection = () => {
             </button>
           </div>
         </div>
-        <div className="col-span-5 place-self-center mt-4 lg:mt-10">
+        <div
+          data-aos="fade-up"
+          className="col-span-5 place-self-center mt-4 lg:mt-10"
+        >
           <Image
             src={imageMe}
             alt="hero image"

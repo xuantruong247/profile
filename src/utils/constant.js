@@ -7,39 +7,7 @@ export const navLinks = [
   { title: "Contact", path: "#contact" },
 ];
 
-export const TAB_DATA = [
-  {
-    title: "Skills",
-    id: "skills",
-    content: (
-      <ul className="list-disc pl-2">
-        <li>Node.js Express</li>
-        <li>Javascrip Reactjs Nextjs Typescript</li>
-        <li>Antd Boostrap Tailwindcss</li>
-      </ul>
-    ),
-  },
-  {
-    title: "Education",
-    id: "education",
-    content: (
-      <ul className="list-disc pl-2">
-        <li>University of Greenwich</li>
-        <li>Front-End Developer CyberSoft Academy</li>
-      </ul>
-    ),
-  },
-  {
-    title: "Certifications",
-    id: "certifications",
-    content: (
-      <ul className="list-disc pl-2">
-        <li>Bachelor of Information Technology</li>
-        <li>Professional Front-End Developer</li>
-      </ul>
-    ),
-  },
-];
+
 
 export const projectsData = [
   {
