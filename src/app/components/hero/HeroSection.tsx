@@ -4,6 +4,7 @@ import { TypeAnimation } from "react-type-animation";
 import imageMe from "../../../../public/image.jpg";
 import Aos from "aos";
 import { useEffect } from "react";
+import Link from "next/link";
 
 const HeroSection = () => {
   useEffect(() => {
@@ -35,14 +36,18 @@ const HeroSection = () => {
             users.
           </p>
           <div>
-            <button className="px-6 py-3 rounded-full w-full sm:w-fit mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white">
-              Github
-            </button>
-            <button className="px-1 py-1 rounded-full w-full sm:w-fit mr-4 bg-gradient-to-br from-blue-500 to-pink-500 text-white mt-3">
-              <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
-                Dowload CV
-              </span>
-            </button>
+            <Link href="https://github.com/xuantruong247" target="_blank">
+              <button className="px-6 py-3 rounded-full w-full sm:w-fit mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white">
+                Github
+              </button>
+            </Link>
+            <Link href="/ho_so_xin_viec.pdf">
+              <button className="px-1 py-1 rounded-full w-full sm:w-fit mr-4 bg-gradient-to-br from-blue-500 to-pink-500 text-white mt-3">
+                <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
+                  Dowload CV
+                </span>
+              </button>
+            </Link>
           </div>
         </div>
         <div

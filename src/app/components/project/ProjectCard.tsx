@@ -8,11 +8,8 @@ const ProjectCard: React.FC<projectItems> = ({
   imgUrl,
   title,
   description,
-  time,
-  postion,
-  tag,
   gitUrl,
-  previewUrl
+  previewUrl,
 }) => {
   return (
     <div>
@@ -35,13 +32,7 @@ const ProjectCard: React.FC<projectItems> = ({
       </div>
       <div className="text-white rounded-b-xl bg-[#181818] py-6 px-4">
         <h5 className="font-xl font-semibold">{title}</h5>
-        <div className="text-[#ADB7BE]">
-          <span className="flex gap-2">
-            <i className="text-xs">{postion}</i>
-            <p className="text-xs mb-2">{time}</p>
-          </span>
-          <p>{description}</p>
-        </div>
+        <p>{description}</p>
       </div>
     </div>
   );

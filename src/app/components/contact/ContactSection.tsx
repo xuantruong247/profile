@@ -8,7 +8,7 @@ import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
 import Aos from "aos";
 
-const EmailSection = () => {
+const ContactSection = () => {
   const form = useRef<any>();
 
   const sendEmail = (e: any) => {
@@ -40,7 +40,6 @@ const EmailSection = () => {
 
   useEffect(() => {
     Aos.init({ duration: 1000 });
-    Aos.init({ easing: "ease-in-sine" });
   }, []);
 
   return (
@@ -55,10 +54,10 @@ const EmailSection = () => {
           my best to get back to you!
         </p>
         <div className="flex flex-row gap-2 text-white">
-          <Link href="github.com">
+          <Link href="https://github.com/xuantruong247" target="_blank">
             <Image src={GithubIcon} alt="Github Icon" />
           </Link>
-          <Link href="linkedin.com">
+          <Link href="https://www.linkedin.com/in/tr%C6%B0%E1%BB%9Dng-dev-a58277300/" target="_blank">
             <Image src={LinkedinIcon} alt="Linkedin Icon" />
           </Link>
         </div>
@@ -122,4 +121,4 @@ const EmailSection = () => {
   );
 };
 
-export default EmailSection;
+export default ContactSection;

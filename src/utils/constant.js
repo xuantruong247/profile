@@ -1,9 +1,8 @@
 import project1 from "../../public/project-1.jpg";
-import patecan1 from "../../public/patacan-1.png";
 
 export const navLinks = [
   { title: "About", path: "#about" },
-  { title: "Projects & Experiences", path: "#projects&experiences" },
+  { title: "Projects", path: "#projects" },
   { title: "Contact", path: "#contact" },
 ];
 
@@ -40,40 +39,5 @@ export const projectsData = [
     gitUrl: "https://github.com/xuantruong247/final-1682",
     previewUrl: "https://perfume-tau.vercel.app/",
   },
-  {
-    id: 2,
-    title: "Patecan Software",
-    time: "February 2024 - April 2024",
-    postion: "Intern",
-    description:
-      "I interned and worked here as a front-end developer. Work within the Scrum/Agile SDLC model, collaborating with designers and backend teams ensuring customer needs are met.",
-    image: patecan1,
-    tag: ["ALL", "Experiences"],
-    gitUrl: "https://www.patecan.com/",
-    previewUrl: "https://phucuonghome.com/",
-  },
-  {
-    id: 5,
-    title: "Patecan Software",
-    time: "February 2024 - April 2024",
-    postion: "Intern",
-    description:
-      "I interned and worked here as a front-end developer. Work within the Scrum/Agile SDLC model, collaborating with designers and backend teams ensuring customer needs are met.",
-    image: patecan1,
-    tag: ["ALL", "Experiences"],
-    gitUrl: "https://www.patecan.com/",
-    previewUrl: "https://phucuonghome.com/",
-  },
-  {
-    id: 6,
-    title: "Patecan Software",
-    time: "February 2024 - April 2024",
-    postion: "Intern",
-    description:
-      "I interned and worked here as a front-end developer. Work within the Scrum/Agile SDLC model, collaborating with designers and backend teams ensuring customer needs are met.",
-    image: patecan1,
-    tag: ["ALL", "Experiences"],
-    gitUrl: "https://www.patecan.com/",
-    previewUrl: "https://phucuonghome.com/",
-  },
+  
 ];

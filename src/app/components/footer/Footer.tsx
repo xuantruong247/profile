@@ -5,7 +5,7 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <footer className="border broder-t-[#33353F] border-l-transparent border-r-transparent text-white">
-      <div className="sm:container p-12 flex justify-between">
+      <div className="md:p-12 px-7 py-12 flex items-center justify-between">
         <Image src={logo} alt="logo" height={100} width={150}/>
         <p className="text-[#ADB7BE]">All rights reserved &copy; XuanTruong.</p>
       </div>

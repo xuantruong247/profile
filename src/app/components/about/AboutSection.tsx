@@ -37,6 +37,17 @@ export const TAB_DATA = [
       </ul>
     ),
   },
+  {
+    title: "Experiences",
+    id: "experiences",
+    content: (
+      <ul className="list-disc pl-2">
+        <li>
+          Patecan Software (intern): Front-end developer (February 2024-April 2024) 
+        </li>
+      </ul>
+    ),
+  },
 ];
 
 const AboutSection = () => {
@@ -105,6 +116,14 @@ const AboutSection = () => {
               active={tab === "certifications"}
             >
               Certifications
+            </TabButton>
+            <TabButton
+              selectTab={() => {
+                handleTabChange("experiences");
+              }}
+              active={tab === "experiences"}
+            >
+              Experiences
             </TabButton>
           </div>
           <div className="mt-8" data-aos="fade-up-left">
